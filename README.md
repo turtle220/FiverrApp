@@ -1,7 +1,4 @@
-# mern-auth
-
-![Final App](https://i.postimg.cc/tybZb8dL/final-MERNAuth.gif)
-Minimal full-stack MERN app with authentication using passport and JWTs.
+# Fiverr App
 
 This project uses the following technologies:
 
