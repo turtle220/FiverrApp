@@ -11,12 +11,11 @@ class Landing extends Component {
     return (
       <div>
         <img src={Header} className="header_image" alt='' />
-        {/* <img src={Dare} alt='' /> */}
         <div style={{paddingTop: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width:'30%'}}></div>
             <div>
-              <h2 style={{fontWeight: 'bold'}}>PREMIERE PRO</h2>
+              <h1 style={{fontWeight: 'bold'}}>PREMIERE PRO</h1>
             </div>
           </div>
           <div>
@@ -34,9 +33,8 @@ class Landing extends Component {
 
         <div style={{paddingTop: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
-            {/* <div style={{width:'65%'}}></div> */}
             <div style={{width: '80%', justifyContent: 'flex-end', textAlign: 'right'}}>
-              <h2 style={{fontWeight: 'bold'}}>Fiverr</h2>
+              <h1 style={{fontWeight: 'bold'}}>Fiverr</h1>
             </div>
           </div>
           <div>
@@ -51,11 +49,11 @@ class Landing extends Component {
           </div>
         </div>
 
-        <div style={{paddingTop: '20%', paddingBottom: '10%'}}>
+        <div style={{paddingTop: '20%', paddingBottom: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width:'30%'}}></div>
             <div>
-              <h2 style={{fontWeight: 'bold'}}>ENVATO</h2>
+              <h1 style={{fontWeight: 'bold'}}>ENVATO</h1>
             </div>
           </div>
           <div>
