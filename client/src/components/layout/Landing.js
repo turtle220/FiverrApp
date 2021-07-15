@@ -4,12 +4,14 @@ import Footer from '../image/footer.svg';
 import Premiere from '../image/premiere.svg';
 import Envato from '../image/envato.svg';
 import Fiverr from '../image/fiverr.svg';
+import Navbar from './Navbar'
 import './index.css'
 
 class Landing extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         <img src={Header} className="header_image" alt='' />
         <div style={{paddingTop: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
