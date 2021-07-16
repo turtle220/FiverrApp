@@ -8,15 +8,21 @@ import Navbar from './Navbar'
 import './index.css'
 
 class Landing extends Component {
+  componentDidMount() {
+    this.refs.hello.scrollIntoView(); // scroll...
+   }
+
   render() {
     return (
-      <div>
-        <Navbar />
+      <div >
+        <div>
+          <Navbar/>
+        </div>
         <img src={Header} className="header_image" alt='' />
         <div style={{paddingTop: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width:'30%'}}></div>
-            <div>
+            <div ref="hello">
               <h1 style={{fontWeight: 'bold'}}>PREMIERE PRO</h1>
             </div>
           </div>

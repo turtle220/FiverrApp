@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 class Navbar extends Component {
+  
+  movePosition = (e) => {
+    this.refs.hello.scrollIntoView(); 
+  }
+  
   render() {
     return (
       <div className='navbar-fixed'>
@@ -10,6 +15,7 @@ class Navbar extends Component {
           style={{
             fontFamily: 'monospace'
           }}
+          onClick={(e)=>this.movePosition(e)}
           className='col s5 brand-logo center black-text'>
           <p
             style={{
