@@ -8,9 +8,6 @@ import Navbar from './Navbar'
 import './index.css'
 
 class Landing extends Component {
-  componentDidMount() {
-    this.refs.hello.scrollIntoView(); // scroll...
-   }
 
   render() {
     return (
@@ -23,7 +20,7 @@ class Landing extends Component {
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width:'30%'}}></div>
             <div ref="hello">
-              <h1 style={{fontWeight: 'bold'}}>PREMIERE PRO</h1>
+              <h1 id='PERMIERE' style={{fontWeight: 'bold'}}>PREMIERE PRO</h1>
             </div>
           </div>
           <div>
@@ -42,7 +39,7 @@ class Landing extends Component {
         <div style={{paddingTop: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width: '80%', justifyContent: 'flex-end', textAlign: 'right'}}>
-              <h1 style={{fontWeight: 'bold'}}>Fiverr</h1>
+              <h1 id='FIVERR' style={{fontWeight: 'bold'}}>Fiverr</h1>
             </div>
           </div>
           <div>
@@ -61,7 +58,7 @@ class Landing extends Component {
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width:'30%'}}></div>
             <div>
-              <h1 style={{fontWeight: 'bold'}}>ENVATO</h1>
+              <h1 id='ENVATO' style={{fontWeight: 'bold'}}>ENVATO</h1>
             </div>
           </div>
           <div>
