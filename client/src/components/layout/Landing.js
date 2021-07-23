@@ -81,7 +81,6 @@ class Landing extends Component {
           </div>
         </div>
         <div style={{backgroundImage: `url(${Footer})`, height: '770px', paddingTop: '10%'}} >
-          {/* <img src={Footer} className="Footer_image" /> */}
           <div style={{display: 'flex', justifyContent: 'center'}}>
             <buutton style={{width: '30%', padding:'2%', border: '8px solid white', borderRadius: '16px', color: 'white', textAlign: 'center', cursor: 'pointer'}}>
               <a style={{fontSize: '35px', textDecoration: 'none', color: 'white', width: '100%'}}>
