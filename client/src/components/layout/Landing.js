@@ -39,7 +39,7 @@ class Landing extends Component {
         <div style={{paddingTop: '5%'}}>
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width: '80%', justifyContent: 'flex-end', textAlign: 'right'}}>
-              <h1 id='FIVERR' style={{fontWeight: 'bold'}}>Fiverr</h1>
+              <h1 id='FIVERR' style={{fontWeight: 'bold'}}>FIVERR</h1>
             </div>
           </div>
           <div>
