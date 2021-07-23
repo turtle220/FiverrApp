@@ -27,10 +27,12 @@ class Landing extends Component {
             <img src={Premiere} alt='' className="card" />
           </div>
           <div style={{width: '90%', backgroundColor: '#FF9100', display: 'flex'}}>
-            <div style={{width:'915px'}}></div>
-            <div>
+            <div style={{paddingLeft: '28%'}}>
               <h2 style={{ lineBreak: 'anywhere', maxWidth: '95%', padding: '6% 2% 0px', marginTop: '-4.5%', paddingBottom: 0, textAlign: 'left'}}>
-                Kfpevfjwovofvjsifvossjifvsjovjsoosivjsfvoejsomosjmfvosoiemosvisoieosjfvosijvsoawflnawclalcaclmc
+                Adobe's video editing software
+                Creative tools with integration
+                This is just the very beginning
+                The only limit, your imagination
               </h2>
             </div>
           </div>
@@ -47,8 +49,11 @@ class Landing extends Component {
           </div>
           <div style={{width: '90%', backgroundColor: '#FF9100', display: 'flex', float: 'right'}}>
             <div style={{width: '75%'}}>
-              <h2 style={{ lineBreak: 'anywhere', maxWidth: '95%', padding: '8% 4% 0px', marginTop: '-4.5%', paddingBottom: 0, textAlign: 'left'}}>
-                Kfpevfjwovofvjsifvossjifvsjovjsoosivjsfvoejsomosjmfvosoiemosvisoieosjfvosijvsoawflnawclalcaclmc
+              <h2 style={{ lineBreak: 'anywhere', maxWidth: '95%', padding: '8% 4% 0px', marginTop: '-6%', paddingBottom: 0, textAlign: 'left'}}>
+                Don't just idly dream, take action
+                Freelance services for the daring
+                One-stop shop for all your needs
+                Over 100,000 professional sellers
               </h2>
             </div>
           </div>
@@ -65,10 +70,12 @@ class Landing extends Component {
             <img src={Envato} alt='' className="card" />
           </div>
           <div style={{width: '90%', backgroundColor: '#FF9100', display: 'flex'}}>
-            <div style={{width:'915px'}}></div>
-            <div>
+            <div style={{paddingLeft: '28%'}}>
               <h2 style={{ lineBreak: 'anywhere', maxWidth: '95%', padding: '6% 2% 0px', marginTop: '-4.5%', paddingBottom: 0, textAlign: 'left'}}>
-                Kfpevfjwovofvjsifvossjifvsjovjsoosivjsfvoejsomosjmfvosoiemosvisoieosjfvosijvsoawflnawclalcaclmc
+                Unlimited downloads of stock Vue.config.devtools
+                Royalty-free music, photos, graphics
+                We'll handle the content, you create
+                The creative subscription you need
               </h2>
             </div>
           </div>
