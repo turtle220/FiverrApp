@@ -1,39 +1,77 @@
-# Fiverr App
+## What is this?
+This is a MERN stack web application that you can add to your portfolio and mess around with.
 
-This project uses the following technologies:
+Demo: https://mernweatherapp.herokuapp.com/
 
-- [React](https://reactjs.org) and [React Router](https://reacttraining.com/react-router/) for frontend
-- [Express](http://expressjs.com/) and [Node](https://nodejs.org/en/) for the backend
-- [MongoDB](https://www.mongodb.com/) for the database
-- [Redux](https://redux.js.org/basics/usagewithreact) for state management between React components
+**Weathering With You** is a weather web app to get the current weather data of the zip code you submit into the form.
+ Consists of 4 main components
+ - the header at the top
+ - the form to input your zipcode, choose the temperature metric, and save button
+ - [left-hand panel] Display weather data
+ - [right-hand panel] 10 most recent weather data queries
 
-## Medium Series
+## Setup
+Prereq apps to have downloaded
+- [Node](https://nodejs.org/en/) 
+- [git](https://git-scm.com/downloads)
 
-- [Build a Login/Auth App with the MERN Stack — Part 1 (Backend)](https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-1-c405048e3669)
-- [Build a Login/Auth App with the MERN Stack — Part 2 (Frontend & Redux Setup)](https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6eac4e38ee82)
-- [Build a Login/Auth App with the MERN Stack — Part 3 (Linking Redux with React Components)](https://blog.bitsrc.io/build-a-login-auth-app-with-the-mern-stack-part-3-react-components-88190f8db718)
-
-## Configuration
-
-Make sure to add your own `MONGOURI` from your [mLab](http://mlab.com) database in `config/keys.js`.
-
-```javascript
-module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
-  secretOrKey: "secret"
-};
+Clone the repo:
+```
+git clone https://github.com/JinKim7/mern-weather-app.git
 ```
 
-## Quick Start
-
+Download all npm packages for both client/server
 ```javascript
-// Install dependencies for server & client
-npm install && npm run client-install
+npm run setup
+```
 
-// Run client & server with concurrently
+### .env file
+Need two creds. Weather api and mongo connection string
+
+#### Mongo
+Log into [mongo](https://account.mongodb.com/account/login)
+
+On the left-hand sidebar, you should see **Database Access**. Click on it and make a new user for yourself.  
+1. Click on `Add New Database User`
+2. Create a new user by filling out `username` and `password`  
+(this will be different creds than your actual mongo account. This is gives a user access to this particular database.)
+
+On the left-hand sidebar, you should see **Network Access**.  
+Make a new access point for your IP address to get permission on using your mongodb.
+
+Now create a `.env` file in your root directory of `mern-weather-app` and dynamically add this to your `.env`
+```javascript
+DB=mongodb+srv://<username>:<password>@<cluster-id>.mongodb.net/test?retryWrites=true&w=majority
+```
+To get the cluster ID, go to **Clusters** and click on **Connect > Connect your application** to get a more detailed view of how the DB string should look like. 
+
+#### Weather API
+Make an account at   and go to the [api keys](https://home.openweathermap.org/api_keys) section.
+Copy/pasta that key to the .env file using `WEATHER_KEY` as your key
+```
+WEATHER_KEY=1234567890asdfjkl
+```
+
+## Run Locally
+**Note:** The mongo connection is commented out in `server.js`. Just uncomment the code block to connect to mongo:
+```javascript
+// mongoose.connect(process.env.DB, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// }).then(() => console.log('MongoDB Connected...')).catch(err => console.log(err));
+```
+
+You can now run your local.  
+Go to your root directory and start your web app:
+```javascript
 npm run dev
-
-// Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
+This is command will your client and server concurrently. 
+- client - localhost:3000
+- server - localhost:5000
 
-For deploying to Heroku, please refer to [this](https://www.youtube.com/watch?v=71wSzpLyW9k) helpful video by TraversyMedia.
+The service will auto-watch both frontend and backend, so no need to restart to see your changes.  
+Once you save your changes, it'll auto-refresh to view your changes.
+
+### Deploy
+Connect this repo to heroku and it'll auto deploy once you update master, if that's the branch heroku is watching to auto deploy.

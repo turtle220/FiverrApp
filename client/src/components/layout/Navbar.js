@@ -9,7 +9,8 @@ class Navbar extends Component {
         <Link
           to='/#PERMIERE'
           style={{
-            fontFamily: 'monospace'
+            fontFamily: 'monospace',
+            color: 'transparent'
           }}
           onClick={() => window.location.replace("/#PERMIERE")}
           className='col s5 brand-logo center black-text'>
@@ -20,14 +21,15 @@ class Navbar extends Component {
               textAlign: 'right',
               paddingRight: '3%'
             }}>
-            <span style={{ color: '#FF9100' }}>P</span>ERMIERE{' '}
+            <span style={{ color: '#FF9100' }}>P</span>REMIERE{' '}
           </p>
         </Link>
         <div style={{width: '2%'}}></div>
         <Link
           to='/'
           style={{
-            fontFamily: 'monospace'
+            fontFamily: 'monospace',
+            color: 'transparent'
           }}
           onClick={() => window.location.replace("/#FIVERR")}
           className='col s5 brand-logo center black-text'>
@@ -45,7 +47,9 @@ class Navbar extends Component {
         <Link
           to='/'
           style={{
-            fontFamily: 'monospace', paddingRight: '3%'
+            fontFamily: 'monospace', 
+            paddingRight: '3%',
+            color: 'transparent'
           }}
           onClick={() => window.location.replace("/#ENVATO")}
           className='col s5 brand-logo center black-text'>

@@ -20,7 +20,7 @@ class Landing extends Component {
           <div style={{ width: '90%', display: 'flex'}}>
             <div style={{width:'30%'}}></div>
             <div ref="hello">
-              <h1 id='PERMIERE' style={{fontWeight: 'bold'}}>PREMIERE PRO</h1>
+              <h1 id='PREMIERE' style={{fontWeight: 'bold'}}>PREMIERE PRO</h1>
             </div>
           </div>
           <div>
@@ -72,7 +72,7 @@ class Landing extends Component {
           <div style={{width: '90%', backgroundColor: '#FF9100', display: 'flex'}}>
             <div style={{paddingLeft: '28%'}}>
               <h2 style={{ lineBreak: 'anywhere', maxWidth: '95%', padding: '6% 2% 0px', marginTop: '-4.5%', paddingBottom: 0, textAlign: 'left'}}>
-                Unlimited downloads of stock Vue.config.devtools
+                Unlimited downloads of stock devtools
                 Royalty-free music, photos, graphics
                 We'll handle the content, you create
                 The creative subscription you need
